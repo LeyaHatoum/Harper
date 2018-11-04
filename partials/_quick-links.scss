@@ -1,0 +1,50 @@
+.quick-links {
+  background: $tertiaryColor;
+  
+  &__image {
+    width: 100%;
+    &--sizing {
+      width: 100%;
+    }
+  }
+  &--wrapper {
+    padding: 100px 0;
+    @include wrapper ();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__topic {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+    &--space-between {
+      margin-top: 50px;
+    }
+  }
+
+  &__icon {
+    min-width: 50px;
+    height: 50px;
+    background: $primaryColor;
+    border-radius: 50%;
+    font-size: 20px;
+    color: $primaryFontColor;
+    display: flex;
+    margin: 0 20px;
+  
+    &--center {
+      margin: auto;
+    }
+  }
+
+  &--heading {
+    @include headingSize (32px, auto);
+    margin: 0;
+  }
+
+  &--body-text {
+    @include bodyText ();
+  }
+}

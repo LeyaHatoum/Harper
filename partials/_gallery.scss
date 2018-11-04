@@ -1,0 +1,66 @@
+.gallery {
+  width: 100%;
+  border: 2px solid red;
+
+  &--wrapper, &--wrapper2 {
+    @include wrapper ();
+    border: 2px solid green;
+    display: flex;
+  }
+
+  &--wrapper {
+    flex-direction: row;
+  }
+
+  &--wrapper2 {
+    flex-direction: row-reverse;
+  }
+
+  &__text {
+
+    &--heading {
+      @include headingSize (32px, auto);
+    }
+    &--body {
+      @include bodyText ();
+    }
+    &--button {
+      @include harperButton ();
+      float: right;  
+      // FLOAT IS RIGHT HERE
+    }
+
+    &--padding-right {
+      padding-left: 100px;
+    }
+
+    &--padding-left {
+      padding-right: 100px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    &--display {
+      display: block;
+    }
+
+    &--shadow-left {
+      box-shadow: 20px 20px 0 $secondaryColor, -160px 20px 0 $secondaryColor;
+    }
+
+    &--shadow-right {
+      box-shadow: 20px 20px 0 $primaryColor, 160px 20px 0 $primaryColor;
+    }
+
+    &--ascend {
+      position: relative;
+      bottom: 100px;
+    }
+
+    &--descend {
+      position: relative;
+      top: 50px;
+    }
+  }
+}
