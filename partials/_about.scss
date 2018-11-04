@@ -1,0 +1,28 @@
+.about {
+  background: $tertiaryColor;
+  padding: 100px 0;
+  
+  &--wrapper {
+    @include wrapper ();
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &--half-space {
+    width: 50%;
+  }
+
+  &__heading {
+    @include headingSize (42px, auto);
+    margin: 0;
+  }
+  
+  &__body-text {
+    @include bodyText ();
+  }
+  
+  &__button {
+    @include harperButton ();
+  }
+}

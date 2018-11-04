@@ -41,5 +41,6 @@ $primaryFontColor: #171717;
 @mixin harperButton {
   background: $primaryAccentColor;
   @include headingSize (20px, 32px);
-  text-transform: capitalize;
+  border: none;
+  padding: 10px 40px;
 }
