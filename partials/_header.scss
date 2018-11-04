@@ -1,0 +1,117 @@
+// HEADER OF THE HOMEPAGE
+.header {
+  width: 100%;
+  background: $primaryColor;
+  position: relative;
+  
+  // NAV BAR STYLING
+  &__menu {
+    width: 100%;
+    background: $primaryColor;
+    
+    &--layout {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    &--link {
+      text-decoration: none;
+      margin: 5px 30px;
+      @include headingSize(20px, 29px);
+    }
+    
+    &--logo {
+      margin: 5px 50px;
+      @include headingSize (42px, auto);
+    }
+    
+    &--left {
+      order: 1;
+    }
+    
+    &--center {
+      order: 2;
+    }
+    
+    &--right {
+      order: 3;
+    }
+  }
+  
+  // PIC AND TITLE STYLING
+  &--wrapper {
+    @include wrapper();
+    position: relative;
+  }
+
+  &--layout-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  // Image styling
+  &__image {
+    box-shadow: 20px 20px white;
+    position: relative;
+    top: 50px;
+    border: 2px solid green;
+    &--display {
+      display: block;
+    }
+  }
+
+  // Title styling
+  &__title {
+    @include headingSize (160px, 92px);
+    position: relative;
+    border: 2px solid teal;
+    width: 550px;
+    margin-left: 100px;
+
+    &::after {
+      content: '';
+      background-image: url(/assets/Circle-text.png);
+      width: 182px;
+      height: 172px;
+      position: absolute;
+      right: -50px;
+      bottom: 10px;
+    }
+  }
+
+  // BLOG AND CONTACT ME PAGES SPECIFIC STYLING
+  &--positioning-title {
+    height: 80%;
+  }
+
+  &__title2 {
+    @include headingSize (80px, 92px);
+    margin: 0;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+  }
+
+  &--blog-image {
+    background-image: url(/assets/blog-image-1.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &--contact-image {
+    background-image: url(/assets/contact-image-1.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}

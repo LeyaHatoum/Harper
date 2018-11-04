@@ -14,3 +14,32 @@ $secondaryAccentColor: #227284;
 //Font color
 $primaryFontColor: #171717;
 //black
+
+
+//Mixins for Fonts Used
+@mixin headingSize ($sizeValue, $lineHeight) {
+  font-family: Oswald, sans-serif;
+  color: $primaryFontColor;
+  font-size: $sizeValue;
+  line-height: $lineHeight;
+  text-transform: uppercase;
+}
+
+@mixin bodyText () {
+  font-family: Cabin, sans-serif;
+  color: $primaryFontColor;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+@mixin wrapper () {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+//Button Styling 
+@mixin harperButton {
+  background: $primaryAccentColor;
+  @include headingSize (20px, 32px);
+  text-transform: capitalize;
+}

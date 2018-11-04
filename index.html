@@ -14,41 +14,41 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><h1>Harper</h1>
+  <header class="header">
+    <!-- NAV -->
+    <nav class="header__menu">
+      <ul class="header__menu--layout">
+        <li class="header__menu--center"><h1 class="header__menu--logo">Harper</h1>
         </li>
-        <li>
-          <a href="index.html">Home</a>
+        <li class="header__menu--left">
+        <a class="header__menu--link" href="index.html">Home</a>
         </li>
-        <li>
-          <a href="#">About</a>
+        <li class="header__menu--left">
+        <a class="header__menu--link" href="#">About</a>
         </li>
-        <li>
-          <a href="blog.html">Blog</a>
+        <li class="header__menu--right">
+        <a class="header__menu--link" href="blog.html">Blog</a>
         </li>
-        <li>
-          <a href="contact.html">Contact</a>
+        <li class="header__menu--right">
+        <a class="header__menu--link" href="contact.html">Contact</a>
         </li>
       </ul>
     </nav>
-    <div>
-      <img src="assets/home-image-1" alt="Portrait of Harper">
-    </div>
-    <div>
-      <img src="assets/Circle text.png" alt="Everyday life with">
-      <h2>Harper</h2>
+    <!-- IMAGE AND TITLE -->
+    <div class="header--wrapper header--layout-header">
+      <div class="header__image">
+        <img class="header__image--display" src="assets/home-image-1.jpg" alt="Portrait of Harper">
+      </div>
+        <h2 class="header__title">Harper</h2>
+      </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section>
-    <div>
-      <h3>Who's Harper</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aliquam dolorem voluptates vel iste omnis fugiat ipsa repellendus magnam provident suscipit eius fuga et ea molestias assumenda delectus excepturi, error voluptatibus. Sit, ullam fugit.</p>
-      <button>Find out more</button>
-    </div>
+  <section class="about">
+      <h3 class="about__heading">Who's Harper</h3>
+      <p class="about__body-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aliquam dolorem voluptates vel iste omnis fugiat ipsa repellendus magnam provident suscipit eius fuga et ea molestias assumenda delectus excepturi, error voluptatibus. Sit, ullam fugit.</p>
+      <button class="about__button">Find out more</button>
   </section>
 
   <!-- Quick Links Section -->
@@ -61,7 +61,6 @@
         <span class="fa-stack fa-lg">
           <i class="fas fa-image"></i>
           <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
         </span>
       </div>
       <div>
@@ -74,7 +73,6 @@
         <span class="fa-stack fa-lg">
           <i class="fas fa-user"></i>
           <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
         </span>
       </div>
       <div>
@@ -87,7 +85,6 @@
         <span class="fa-stack fa-lg">
           <i class="fas fa-desktop"></i>
           <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
         </span>
       </div>
       <div>
@@ -101,7 +98,6 @@
         <span class="fa-stack fa-lg">
           <i class="fas fa-phone"></i>
           <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
         </span>
       </div>
       <div>
