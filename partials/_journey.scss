@@ -1,0 +1,38 @@
+.journey {
+  background: $tertiaryColor;
+  padding: 100px 0;
+
+  &--wrapper {
+    @include wrapper ();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    box-shadow: 20px 20px 0 $secondaryAccentColor;
+    margin-right: 150px;
+    height: 304px;
+    &--display {
+      display: block;
+    }
+  }
+
+  &__text {
+
+    &--heading {
+      @include headingSize ( 42px, auto);
+      margin: 10px 0 0 0;
+    }
+
+    &--body {
+      @include bodyText ();
+    }
+
+    &--button {
+      @include harperButton ();
+      margin-top: 25px;
+    }
+  }
+}

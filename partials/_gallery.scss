@@ -46,11 +46,11 @@
     }
 
     &--shadow-left {
-      box-shadow: 20px 20px 0 $secondaryColor, -160px 20px 0 $secondaryColor;
+      box-shadow: 20px 20px 0 $secondaryColor, -300px 20px 0 $secondaryColor;
     }
 
     &--shadow-right {
-      box-shadow: 20px 20px 0 $primaryColor, 160px 20px 0 $primaryColor;
+      box-shadow: 20px 20px 0 $primaryColor, 300px 20px 0 $primaryColor;
     }
 
     &--ascend {

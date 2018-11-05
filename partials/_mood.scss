@@ -1,0 +1,17 @@
+.mood {
+  padding: 100px 0;
+
+  &--wrapper {
+    @include wrapper ();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__image {
+    &--display {
+      display: block;
+    }
+    width: calc((100% / 3) - 30px);
+  }
+}
