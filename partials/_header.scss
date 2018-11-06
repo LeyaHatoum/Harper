@@ -54,14 +54,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-items: space-between;
+    justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
   }
 
   &--dynamic-height {
     height: 70vh;
-    min-height: 700px;
+    min-height: 600px;
+    max-height: 900px;
   }
 
   // Image styling
@@ -69,40 +69,39 @@
     box-shadow: 20px 20px white;
     position: relative;
     top: 10%;
-    border: 2px solid green;
     min-height: 400px;
-    max-height: 1000px;
-    width: 50%;
-    max-width: 600px;
+    max-height: 1200px;
+    width: 45%;
+    max-width: 680px;
+
     &--display {
       display: block;
       width: 100%;
       height: 100%;
-      max-height: 1000px;
-      max-width: 600px;
+      max-height: 1200px;
+      max-width: 680px;
     }
   }
 
   // Title styling
   &__title {
-    border: 2px solid yellow;
-    margin-left: 100px;
+    width: 55%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     position: relative;
+    padding-left: 5%;
 
     &--circle {
       align-self: center;
       position: relative;
       right: 15%;
       bottom: 60px;
-
-
     }
     &--heading {
       @include headingSize (9vw, 92px);
-      border: 2px solid teal;
+      position: relative;
+      left: -0.7vw;
     }
   }
 
@@ -125,15 +124,131 @@
   }
 
   &--blog-image {
-    background: url(/assets/blog-image-1.jpg) no-repeat center center;
+    background: url(assets/blog-image-1.jpg) no-repeat center center;
     height: 400px;
     background-size: cover;
     
   }
 
   &--contact-image {
-    background: url(/assets/contact-image-1.jpg) no-repeat center center;
+    background: url(assets/contact-image-1.jpg) no-repeat center center;
     height: 400px;
     background-size: cover;
   }
 }
+
+// HOMEPAGE MEDIA QUIERIES
+// Minor Layout Change
+@media all and (max-width: 1200px) {
+  .header {
+    &--new-height {
+      height: 50vw;
+      min-height: 300px;
+    }
+
+    &__title {
+      &--circle {
+        bottom: 40px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .header {
+    &--image {
+      background: url(assets/home-image-1.jpg) no-repeat center center;
+      background-size: cover;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 100px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient( top,#fdfdfd00 60%, $primaryColor);
+        opacity: 1; 
+      }
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__title {
+      margin: auto;
+      padding: 5% 0% 5% 10%;
+      width: 100%;
+
+      &--circle {
+        top: 40%;
+        right: 14%;
+        width: 22%;
+      }
+
+      &--heading {
+        width: 70%;
+        font-size: 15vw;
+        color: $tertiaryColor;
+      }
+    }
+  }
+}
+
+//MOBILE VERSION
+@media all and (max-width: 700px) {
+.header {
+  height: 100vh;
+
+  &--wrapper {
+    width: 90vw;
+  }
+
+  &--layout-header {
+    height: 90vh;
+    flex-direction: row;
+    align-content: flex-end;
+  }
+
+  &__title {
+    margin: auto;
+    padding-left: 10%;
+
+    &--heading {
+      font-size: 17vw;
+    }
+
+    &--circle {
+        top: 40%;
+        right: 12%;
+        max-width: 22%;
+      }
+    }
+  }
+
+  // BLOG AND CONTACT SPECIFIC STYLING
+  .header {
+    &__subpage-height {
+      height: 300px;
+    }
+
+    &__title2, &__title3 {
+      font-size: 60px;
+      text-align: center;
+      position: relative;
+    }
+    
+    &__title2 {
+      top: 170px;
+    }
+    &__title3 {
+      top: 175px;
+    }
+  }
+
+  //HAMBURGAAAAAAAAAAAAAA
+  
+}
+
+
