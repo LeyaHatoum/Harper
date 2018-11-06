@@ -48,3 +48,18 @@
     @include bodyText ();
   }
 }
+
+//MEDIA QUEIRIES START HERE 
+
+@media all and (max-width: 900px) {
+  .quick-links {
+    &--wrapper {
+      width: 90vw;
+    }
+    &__topic {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+}

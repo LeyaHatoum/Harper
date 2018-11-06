@@ -1,11 +1,9 @@
 .gallery {
   width: 100%;
   background: white;
-  border: 2px solid red;
 
   &--wrapper, &--wrapper2 {
     @include wrapper ();
-    border: 2px solid green;
     display: flex;
   }
 
@@ -62,6 +60,100 @@
     &--descend {
       position: relative;
       top: 50px;
+    }
+  }
+}
+
+//MEDIA QUEIRIES START HERE 
+
+@media all and (max-width: 1300px) {
+  .gallery {
+    width: 100%;
+
+    &--wrapper, &--wrapper2 {
+      flex-direction: column;
+    }
+
+    &__image {
+      max-width: 100%;
+
+      &--ascend {
+        bottom: 50px;
+      }
+
+      &--descend {
+        right: -250px;
+        top: 50px;
+      }
+    }
+
+    &__text {
+      align-self: center;
+      padding: 0;
+      max-width: 700px;
+      text-align: center;
+
+      &--padding-left {
+        margin-top: 100px;
+      }
+
+      &--button {
+        float: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .gallery {
+    &--wrapper, &--wrapper2 {
+      width: 100%;
+    }
+
+    &__text {
+      margin: 40px 0;
+    }
+
+    &__image {
+      width: 100%;
+
+      &--ascend, &--descend {
+        position: initial;
+        margin: auto;
+      }
+
+      &--ascend {
+        margin-top: 40px;
+      }
+
+      &--shadow-left {
+      box-shadow: 20px 20px 0 $secondaryColor, -20px 20px 0 $secondaryColor;
+      float: left;
+      margin-left: 20px;
+      }
+
+      &--shadow-right {
+      box-shadow: 20px 20px 0 $primaryColor;
+      float: right;
+      margin-right: 20px;
+      }
+
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  .gallery {
+    &__image {
+      &--ascend, &--descend {
+        width: 100%;
+        box-shadow: none;
+        margin: 0;
+      }
+    }
+
+    &__text {
+      margin-top: 0;
     }
   }
 }

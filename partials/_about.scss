@@ -26,3 +26,18 @@
     @include harperButton ();
   }
 }
+
+//MEDIA QUEIRIES START HERE
+
+@media all and (max-width: 900px) {
+  .about {
+    &--half-space {
+      width: 100%;
+      text-align: center;
+    }
+
+    &--wrapper {
+      width: 90vw;
+    }
+  }
+}
