@@ -54,37 +54,55 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-items: space-between;
     align-items: center;
+    border: 2px solid red;
+  }
+
+  &--dynamic-height {
+    height: 70vh;
+    min-height: 700px;
   }
 
   // Image styling
   &__image {
     box-shadow: 20px 20px white;
     position: relative;
-    top: 50px;
+    top: 10%;
     border: 2px solid green;
+    min-height: 400px;
+    max-height: 1000px;
+    width: 50%;
+    max-width: 600px;
     &--display {
       display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 1000px;
+      max-width: 600px;
     }
   }
 
   // Title styling
   &__title {
-    @include headingSize (160px, 92px);
-    position: relative;
-    border: 2px solid teal;
-    width: 550px;
+    border: 2px solid yellow;
     margin-left: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
 
-    &::after {
-      content: '';
-      background-image: url(/assets/Circle-text.png);
-      width: 182px;
-      height: 172px;
-      position: absolute;
-      right: -50px;
-      bottom: 10px;
+    &--circle {
+      align-self: center;
+      position: relative;
+      right: 15%;
+      bottom: 60px;
+
+
+    }
+    &--heading {
+      @include headingSize (9vw, 92px);
+      border: 2px solid teal;
     }
   }
 
@@ -97,21 +115,25 @@
     @include headingSize (80px, 92px);
     margin: 0;
     position: absolute;
-    bottom: -35px;
+    bottom: -40px;
     left: 0;
   }
 
+  &__title3 {
+    @extend .header__title2;
+    bottom: -45px;
+  }
+
   &--blog-image {
-    background-image: url(/assets/blog-image-1.jpg);
+    background: url(/assets/blog-image-1.jpg) no-repeat center center;
     height: 400px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    
   }
 
   &--contact-image {
-    background-image: url(/assets/contact-image-1.jpg);
+    background: url(/assets/contact-image-1.jpg) no-repeat center center;
     height: 400px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
 }

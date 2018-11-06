@@ -39,41 +39,43 @@
 
     <!-- Title -->
     <div class="header--wrapper header--positioning-title">
-      <h2 class="header__title2">Contact me</h2>
+      <h2 class="header__title3">Contact me</h2>
     </div>
   </header>
 
-  <!-- Contact Me Section -->
-  <form>
-    <label for="name"></label>
-    <input type="text" id="name" placeholder="name" required>
-    <label for="email"></label>
-    <input type="email" id="email" placeholder="email address">
-    <label for="comment"></label>
-    <input type="text" id="comment" placeholder="comment">
-    <button>Post comment</button>
-  </form>
-
-  <!-- Side Bar -->
-  <aside>
-    <div>
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-linkedin-in"></i>
-      <i class="fab fa-instagram"></i>
-    </div>
-    <h5>info@email.com</h5>
-    <ul>
-      <li>123 - 456 - 7890</li>
-      <li>123 Queen Street West, Unit 10</li>
-      <li>Toronto, ontario</li>
-      <li>m5v2d5</li>
-    </ul>
-  </aside>
+  <div class="wrapper">
+    <!-- Contact Me Section -->
+    <form class="form">
+      <label for="name"></label>
+      <input class="form__field1 form__field1--body form__field1--space-between"type="text" id="name" placeholder="name" required>
+      <label for="email"></label>
+      <input class="form__field1 form__field1--body"type="email" id="email" placeholder="email address">
+      <label for="message"></label>
+      <textarea class="form__field2 form__field2--body" row="6" id="message">Message</textarea>
+      <button class="form__button">Post comment</button>
+    </form>
+  
+    <!-- Side Bar -->
+    <aside class="aside--bgpadding aside--resize-frame">
+      <div class="aside__sm">
+        <i class="fab fa-facebook-f aside__sm--space-between"></i>
+        <i class="fab fa-twitter aside__sm--space-between"></i>
+        <i class="fab fa-linkedin-in aside__sm--space-between"></i>
+        <i class="fab fa-instagram aside__sm--space-between"></i>
+      </div>
+      <h5 class="aside--heading aside--email-case">info@email.com</h5>
+      <ul class="aside--body aside__list">
+        <li>123 - 456 - 7890</li>
+        <li>123 Queen Street West, Unit 10</li>
+        <li>Toronto, ontario</li>
+        <li>m5v2d5</li>
+      </ul>
+    </aside>
+  </div>
 
   <!-- Footer -->
-  <footer>
-    <p>Copyright &copy 2018 HackerYou</p>
+  <footer class="footer footer--sticky">
+    <p class="footer__copyright">Copyright &copy 2018 HackerYou</p>
   </footer>
 
 </body>

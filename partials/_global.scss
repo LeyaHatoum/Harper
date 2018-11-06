@@ -44,3 +44,10 @@ $primaryFontColor: #171717;
   border: none;
   padding: 10px 40px;
 }
+
+//Global Styling
+body {
+  background: $tertiaryColor;
+  min-height: 100vh;
+  position: relative;
+}

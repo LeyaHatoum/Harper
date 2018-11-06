@@ -1,0 +1,146 @@
+.wrapper {
+  @include wrapper();
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.main {
+  &--bgpadding {
+    background: white;
+    padding: 40px;
+    margin: 25px;
+  }
+  &--heading {
+    @include headingSize(32px, 32px);
+    margin: 0;
+    padding: 0;
+  }
+
+  &--body {
+    @include bodyText ();
+  
+  }
+
+  &__comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--space-between {
+      margin-right: 25px;
+    }
+
+    &--no-margin {
+      margin: 0;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin: 0 25px;
+
+  &__field1, &__field2 {
+    padding: 40px;
+    border: none;
+
+    &--body{
+      @include bodyText();
+
+      &::placeholder {
+        opacity: 1;
+        color: $primaryFontColor;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &__field1 {
+    width: 48.5%;
+    height: 100px;
+    &--space-between {
+      margin-right: 10px;
+    }
+  }
+
+  &__field2 {
+    margin: 20px 0;
+    min-width: 100%;
+    min-height: 250px;
+    resize: none;
+  }
+
+  &__button {
+    @include harperButton ();
+    width: 100%;
+  }
+}
+
+.aside {
+  &--bgpadding {
+    background: white;
+    padding: 40px;
+    margin: 20px;
+  }
+
+  &--added-margin {
+    margin-bottom: 20px;
+  }
+
+  &--heading {
+    @include headingSize (24px,auto);
+    margin: 0;
+  }
+
+  &--body {
+    @include bodyText ();
+  }
+
+  &--link {
+    color: $secondaryAccentColor;
+    font-weight: bold;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &--bullets {
+      &:before {
+        content:"•"; 
+        font-size: 20px;
+        margin: 0 25px 0 10px;
+        
+      }
+    }
+  }
+
+  // CONTACT ME SPECIFIC
+
+  &__sm {
+    color: $secondaryAccentColor;
+    font-size: 28px;
+    &--space-between {
+      margin: 0;
+      padding: 0 25px 20px 0;
+    }
+  }
+
+  &--email-case {
+    text-transform: lowercase;
+  }
+
+  &--resize-frame {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    height: 300px;
+    min-width: 350px;
+  }
+
+}

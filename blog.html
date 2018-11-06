@@ -43,90 +43,93 @@
     </div>
   </header>
 
+  <div class="wrapper">
   <!-- Main Blog -->
-  <main>
-
-    <!-- The Blog Post -->
-    <div>
-      <h4>My favourite travel destinations</h4>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem temporibus illo quaerat ratione
-        doloremque soluta sint fugit, id doloribus dolore. Iusto provident amet officiis quam eos est libero eaque
-        perferendis!
-        lroe
-      </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam saepe assumenda delectus doloribus recusandae
-        at qui aut, modi id sint expedita laborum maiores eum ipsum enim repudiandae quod ea hic.</p>
-      <p>Fugit sapiente illo facere facilis quod veritatis nesciunt non nostrum sit rerum voluptatem nam quae illum,
-        eaque, magni reprehenderit, alias iusto minus nisi iure quas ratione itaque tempore. Sint, inventore?</p>
-      <p>Odio harum totam sint magnam, vel qui aspernatur culpa consequatur, maiores excepturi adipisci nihil, voluptas
-        repudiandae error optio ipsam iusto. Amet fugit mollitia, qui iusto deleniti labore esse velit quibusdam!</p>
-      <p>Autem iste, officiis, similique quae distinctio quidem sint est ab error quaerat inventore quas voluptas!
-        Officiis aspernatur mollitia dolorem. Iure corrupti enim cupiditate saepe eaque deleniti animi dignissimos
-        libero sit.</p>
-      <p>Culpa, ut. Ad libero, magni ut provident veniam nobis eveniet rerum necessitatibus quam doloremque commodi. At
-        consequuntur modi explicabo error, dignissimos sunt reiciendis accusamus repellat dolorum tenetur possimus
-        placeat obcaecati.</p>
-    </div>
-
-    <!-- The Blog Comments -->
-    <div>
-      <div>
-        <img src="assets/blog-image-3.jpg" alt="Profile Picture of Maggie">
+    <main>
+  
+      <!-- The Blog Post -->
+      <div class="main--bgpadding">
+        <h4 class="main--heading">My favourite travel destinations</h4>
+        <p class="main--body">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="main--body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem temporibus illo quaerat ratione
+          doloremque soluta sint fugit, id doloribus dolore. Iusto provident amet officiis quam eos est libero eaque
+          perferendis!
+          lroe
+        </p>
+        <p class="main--body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam saepe assumenda delectus doloribus recusandae
+          at qui aut, modi id sint expedita laborum maiores eum ipsum enim repudiandae quod ea hic.</p>
+        <p class="main--body">Fugit sapiente illo facere facilis quod veritatis nesciunt non nostrum sit rerum voluptatem nam quae illum,
+          eaque, magni reprehenderit, alias iusto minus nisi iure quas ratione itaque tempore. Sint, inventore?</p>
+        <p class="main--body">Odio harum totam sint magnam, vel qui aspernatur culpa consequatur, maiores excepturi adipisci nihil, voluptas
+          repudiandae error optio ipsam iusto. Amet fugit mollitia, qui iusto deleniti labore esse velit quibusdam!</p>
+        <p class="main--body">Autem iste, officiis, similique quae distinctio quidem sint est ab error quaerat inventore quas voluptas!
+          Officiis aspernatur mollitia dolorem. Iure corrupti enim cupiditate saepe eaque deleniti animi dignissimos
+          libero sit.</p>
+        <p class="main--body">Culpa, ut. Ad libero, magni ut provident veniam nobis eveniet rerum necessitatibus quam doloremque commodi. At
+          consequuntur modi explicabo error, dignissimos sunt reiciendis accusamus repellat dolorum tenetur possimus
+          placeat obcaecati.</p>
       </div>
-      <div>
-        <p>Tuesday October 9th, 2018 by Maggie</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio velit omnis unde placeat natus deleniti
-          possimus debitis et, at alias, earum reprehenderit ipsam asperiores architecto ad quisquam non enim
-          assumenda!</p>
+  
+      <!-- The Blog Comments -->
+      <div class="main--bgpadding main__comment">
+        <div class="main__comment--space-between">
+          <img src="assets/blog-image-3.jpg" alt="Profile Picture of Maggie">
+        </div>
+        <div class="main--body">
+          <p class="main__comment--no-margin">Tuesday October 9th, 2018 by Maggie</p>
+          <p class="main__comment--no-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio velit omnis unde placeat natus deleniti
+            possimus debitis et, at alias, earum reprehenderit ipsam asperiores architecto ad quisquam non enim
+            assumenda!</p>
+        </div>
       </div>
-    </div>
-    <div>
-      <div>
-        <img src="assets/blog-image-4.jpg" alt="Profile Picture of Daisy blowing a bubble gum">
+      <div class="main--bgpadding main__comment">
+        <div class="main__comment--space-between">
+          <img src="assets/blog-image-4.jpg" alt="Profile Picture of Daisy blowing a bubble gum">
+        </div>
+        <div class="main--body">
+          <p class="main__comment--no-margin">Wednesday October 10th, 2018 by Daisy</p>
+          <p class="main__comment--no-margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio velit omnis unde placeat natus deleniti
+            possimus
+            debitis et, at alias, earum reprehenderit ipsam asperiores architecto ad quisquam non enim assumenda!</p>
+        </div>
       </div>
-      <div>
-        <p>Wednesday October 10th, 2018 by Daisy</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio velit omnis unde placeat natus deleniti
-          possimus
-          debitis et, at alias, earum reprehenderit ipsam asperiores architecto ad quisquam non enim assumenda!</p>
+  
+      <!-- Comment Section -->
+      <form class="form">
+        <label for="name"></label>
+        <input class="form__field1 form__field1--space-between form__field1--body" type="text" id="name" placeholder="name" required>
+        <label for="email"></label>
+        <input class="form__field1 form__field1--body" type="email" id="email" placeholder="email address">
+        <label for="comment"></label>
+        <textarea rows="5" class="form__field2 form__field2--body" id="comment" placeholder="comment">
+        Comment</textarea>
+        <button class="form__button">Post comment</button>
+      </form>
+    </main>
+  
+    <!-- Side Bar -->
+    <aside>
+      <div class="aside--bgpadding">
+        <img class="aside--added-margin"src="assets/blog-image-2.jpg" alt="Harper lying down on a surface looking at her raised right hand">
+        <h5 class="aside--heading">About harper</h5>
+        <p class="aside--body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta facilis, dignissimos. <a class="aside--link">Find out more.</a></p>
       </div>
-    </div>
-
-    <!-- Comment Section -->
-    <form>
-      <label for="name"></label>
-      <input type="text" id="name" placeholder="name" required>
-      <label for="email"></label>
-      <input type="email" id="email" placeholder="email address">
-      <label for="comment"></label>
-      <input type="text" id="comment" placeholder="comment">
-      <button>Post comment</button>
-    </form>
-  </main>
-
-  <!-- Side Bar -->
-  <aside>
-    <div>
-      <img src="assets/blog-image-2.jpg" alt="Harper lying down on a surface looking at her raised right hand">
-      <h5>About harper</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta facilis, dignissimos. <a>Find out more.</a></p>
-    </div>
-    <div>
-      <h5>Recent posts</h5>
-      <ul>
-        <li>Donec facilisis tortor ut</li>
-        <li>Augue lacinia at viverra</li>
-        <li>Semper sed sapien metus</li>
-        <li>Scelerisque nec pharetra id</li>
-      </ul>
-    </div>
-  </aside>
+      <div class="aside--bgpadding">
+        <h5 class="aside--heading">Recent posts</h5>
+        <ul class="aside--body aside__list">
+          <li class="aside__list--bullets">Donec facilisis tortor ut</li>
+          <li class="aside__list--bullets">Augue lacinia at viverra</li>
+          <li class="aside__list--bullets">Semper sed sapien metus</li>
+          <li class="aside__list--bullets">Scelerisque nec pharetra id</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
 
   <!-- Footer -->
-  <footer>
-    <p>Copyright &copy 2018 HackerYou</p>
+  <footer class="footer">
+    <p class="footer__copyright">Copyright &copy 2018 HackerYou</p>
   </footer>
 
 </body>
