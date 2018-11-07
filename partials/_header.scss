@@ -123,6 +123,26 @@
 
     }
   }
+  //ADDING A SKIP LINK FOR ACCESSIBILITY
+  &__skip-link {
+    @include harperButton ();
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transform: translateY(-100px);
+    position: absolute;
+    top: 0;
+
+    &:focus, &:active {
+      transform: translateY(0px);
+    }
+
+    &:hover {
+      transform: scale(1);
+      background: $tertiaryColor;
+    }
+  }
 
   // BLOG AND CONTACT ME PAGES SPECIFIC STYLING
   &--positioning-title {
@@ -155,6 +175,7 @@
     background-size: cover;
   }
 }
+
 
 // HOMEPAGE MEDIA QUIERIES
 // Minor Layout Changes

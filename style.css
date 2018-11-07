@@ -266,6 +266,48 @@ body {
       position: absolute;
       bottom: 0;
       left: -12px; }
+  .header__skip-link {
+    background: #f38d8d;
+    font-family: Oswald, sans-serif;
+    color: #171717;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 40px;
+    -webkit-transition: background 0.3s, -webkit-transform 0.3s;
+    transition: background 0.3s, -webkit-transform 0.3s;
+    -o-transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    position: absolute;
+    top: 0; }
+    .header__skip-link:hover {
+      background: #b9dde7;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+      @media all and (max-width: 700px) {
+        .header__skip-link:hover {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); } }
+    .header__skip-link:focus, .header__skip-link:active {
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px); }
+    .header__skip-link:hover {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      background: #f6f6f6; }
   .header--positioning-title {
     height: 80%; }
   .header__title2, .header__title3 {
@@ -476,6 +518,11 @@ body {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
+      @media all and (max-width: 700px) {
+        .about__button:hover {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); } }
 
 @media all and (max-width: 900px) {
   .about--half-space {
@@ -599,6 +646,11 @@ body {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
+      @media all and (max-width: 700px) {
+        .gallery__text--button:hover {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); } }
   .gallery__text--padding-right {
     padding-left: 100px; }
   .gallery__text--padding-left {
@@ -736,12 +788,18 @@ body {
     -o-transition: background 0.3s, transform 0.3s;
     transition: background 0.3s, transform 0.3s;
     transition: background 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    display: inline-block;
     margin-top: 25px; }
     .journey__text--button:hover {
       background: #b9dde7;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
+      @media all and (max-width: 700px) {
+        .journey__text--button:hover {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); } }
 
 @media all and (max-width: 1300px) {
   .journey {
@@ -929,6 +987,11 @@ body {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
+      @media all and (max-width: 700px) {
+        .form__button:hover {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); } }
 
 .aside--bgpadding {
   background: white;
