@@ -97,27 +97,29 @@
         </div>
       </div>
   
-      <!-- Comment Section -->
+      <!-- Form Section -->
       <form class="form">
         <label for="name"></label>
         <input class="form__field1 form__field1--space-between form__field1--body" type="text" id="name" placeholder="name" required>
         <label for="email"></label>
         <input class="form__field1 form__field1--body" type="email" id="email" placeholder="email address">
         <label for="comment"></label>
-        <textarea rows="5" class="form__field2 form__field2--body" id="comment" placeholder="comment">
+        <textarea rows="1" class="form__field2 form__field2--body" id="comment" placeholder="comment">
         Comment</textarea>
         <button class="form__button">Post comment</button>
       </form>
     </main>
   
     <!-- Side Bar -->
-    <aside>
-      <div class="aside--bgpadding">
-        <img class="aside--added-margin"src="assets/blog-image-2.jpg" alt="Harper lying down on a surface looking at her raised right hand">
-        <h5 class="aside--heading">About harper</h5>
-        <p class="aside--body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta facilis, dignissimos. <a class="aside--link">Find out more.</a></p>
+    <aside class="aside">
+      <div class="aside--bgpadding aside__left-box">
+        <img class="aside--added-margin aside__left-box--image"src="assets/blog-image-2.jpg" alt="Harper lying down on a surface looking at her raised right hand">
+        <div class="aside__left-box--text">
+            <h5 class="aside--heading">About harper</h5>
+            <p class="aside--body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta facilis, dignissimos. <a class="aside--link">Find out more.</a></p>
+        </div>
       </div>
-      <div class="aside--bgpadding">
+      <div class="aside--bgpadding aside__right-box">
         <h5 class="aside--heading">Recent posts</h5>
         <ul class="aside--body aside__list">
           <li class="aside__list--bullets">Donec facilisis tortor ut</li>

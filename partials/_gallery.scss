@@ -89,7 +89,7 @@
 
     &__text {
       align-self: center;
-      padding: 0;
+      padding: 0 0 50px 0;
       max-width: 700px;
       text-align: center;
 
@@ -151,9 +151,10 @@
         margin: 0;
       }
     }
-
+    
     &__text {
       margin-top: 0;
+      width: 90vw;
     }
   }
 }

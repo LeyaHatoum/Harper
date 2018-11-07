@@ -3,13 +3,6 @@
   height: 50px;
   background: $primaryFontColor;
   display: flex;
-
-  &--sticky {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
   
 
   &__copyright {
