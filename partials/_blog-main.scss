@@ -61,7 +61,7 @@
   }
 
   &__field1 {
-    width: 48.5%;
+    width: 48%;
     height: 100px;
     &--space-between {
       margin-right: 10px;
@@ -123,12 +123,21 @@
   // CONTACT ME SPECIFIC
 
   &__sm {
-    color: $secondaryAccentColor;
     font-size: 28px;
     &--space-between {
       margin: 0;
       padding: 0 25px 20px 0;
     }
+    
+    &--animate {
+      color: $secondaryAccentColor;
+      transition: transform 0.4s, color 0.4s;
+
+      &:hover {
+      color: $primaryColor;
+      transform: scale(1.2);
+      }
+    }  
   }
 
   &--email-case {
@@ -194,6 +203,21 @@
   }
 }
 
+@media all and (max-width: 900px) {
+
+  .main {
+    &--bgpadding {
+      padding: 20px;
+    }
+  }
+
+  .aside {
+    &--bgpadding {
+      padding: 20px;
+    }
+  }
+}
+
 @media all and (max-width: 700px) {
   .wrapper {
     width: 90vw;
@@ -201,6 +225,11 @@
   .aside {
     &__left-box {
       flex-direction: column;
+      
+      &--text {
+        text-align: center;
+        margin: 0;
+      }
 
       &--image {
         width: 100%;
@@ -209,10 +238,12 @@
 
     &__right-box {
       min-width: 86%;
+      text-align: center;
     }
 
     &__list {
       &--bullets {
+        margin-top: 10px;
         &:before {
           content:"•"; 
           font-size: 20px;
@@ -236,7 +267,11 @@
     justify-content: space-around;
 
       &--space-between {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
+      }
+
+      &--diff-padding {
+        padding-right: 0;
       }
     }
 

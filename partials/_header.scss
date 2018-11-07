@@ -34,6 +34,11 @@
       text-decoration: none;
       margin: 5px 30px;
       @include headingSize(20px, 29px);
+      transition: color 0.3s;
+
+      &:hover {
+        color: $tertiaryColor;
+      }
     }
     
     &--logo {
@@ -172,6 +177,10 @@
         @include headingSize (100px, 100px);
       }
     }
+
+    &--blog-image, &--contact-image {
+      height: 400px;
+    }
   }  
 }
 
@@ -194,11 +203,12 @@
       }
     }
 
+    // Remove original image
     &__image {
       display: none;
     }
 
-
+    // Adjust layout of the Title
     &__title {
       margin: 0 auto;
       width: 500px;
@@ -261,13 +271,13 @@
     }
 
     &__title2, &__title3 {
-      font-size: 60px;
+      font-size: 56px;
       text-align: center;
       position: relative;
     }
     
     &__title2 {
-      top: 170px;
+      top: 245px;
     }
     &__title3 {
       top: 250px;
@@ -280,12 +290,13 @@
       position: fixed;
       z-index: 99;
       top: 0;
-
+      
       &--layout {
         display: block;
         padding-bottom: 20px;
         height: 80px;
         overflow: hidden;
+        transition: height 0.3s; 
       }
 
       &--logo {

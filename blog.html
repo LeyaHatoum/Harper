@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Blog - My Favourite Travel Desitinations</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.ico" type="image/png">
+  <title>Blog - My Favourite Travel Desitinations</title>
 </head>
 
 <body>
@@ -99,12 +100,12 @@
   
       <!-- Form Section -->
       <form class="form">
-        <label for="name"></label>
+        <label for="name" class="formlabel">Name</label>
         <input class="form__field1 form__field1--space-between form__field1--body" type="text" id="name" placeholder="name" required>
-        <label for="email"></label>
+        <label for="email" class="formlabel">Email</label>
         <input class="form__field1 form__field1--body" type="email" id="email" placeholder="email address">
-        <label for="comment"></label>
-        <textarea rows="1" class="form__field2 form__field2--body" id="comment" placeholder="comment">
+        <label for="comment" class="formlabel">Comment</label>
+        <textarea rows="2" class="form__field2 form__field2--body" id="comment" placeholder="comment">
         Comment</textarea>
         <button class="form__button">Post comment</button>
       </form>
