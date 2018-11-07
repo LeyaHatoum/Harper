@@ -1,14 +1,15 @@
 // HEADER OF THE HOMEPAGE
 .header {
+  width: 100%;
+  height: 700px;
+  background: $primaryColor;
+  position: relative;
+
   input[type=checkbox] {
       visibility: hidden;
       position: absolute;
     }
     
-  width: 100%;
-  background: $primaryColor;
-  position: relative;
-
   &__hamburger {
     display: none;
   }
@@ -62,14 +63,12 @@
   &--layout-header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   &--dynamic-height {
-    height: 70vh;
-    min-height: 600px;
+    height: 700px;
     max-height: 900px;
   }
 
@@ -77,40 +76,46 @@
   &__image {
     box-shadow: 20px 20px white;
     position: relative;
-    top: 10%;
-    min-height: 400px;
-    max-height: 1200px;
-    width: 45%;
-    max-width: 680px;
+    top: 50px;
+    width: 40%;
+    max-width: 500px;
 
     &--display {
       display: block;
       width: 100%;
       height: 100%;
-      max-height: 1200px;
-      max-width: 680px;
     }
   }
 
   // Title styling
   &__title {
-    width: 55%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    align-self: center;
+    width: 50%;
+    margin-bottom: 100px;
+
+    height: 190px;
     position: relative;
-    padding-left: 5%;
 
     &--circle {
-      align-self: center;
-      position: relative;
-      right: 15%;
-      bottom: 60px;
+      display: block;
+      height: 165px;
+
+      position: absolute;
+      top: 0;
+      left: 345px;
     }
     &--heading {
-      @include headingSize (9vw, 92px);
-      position: relative;
-      left: -0.7vw;
+      width: 80%;
+      height: 70%;
+      display: block;
+      @include headingSize (140px, 140px);
+      margin: 0;
+      padding: 0;
+
+      position: absolute;
+      bottom: 0;
+      left: -12px;
+
     }
   }
 
@@ -147,24 +152,32 @@
 }
 
 // HOMEPAGE MEDIA QUIERIES
-// Minor Layout Change
-@media all and (max-width: 1200px) {
-  .header {
-    &--new-height {
-      height: 50vw;
-      min-height: 300px;
-    }
+// Minor Layout Changes
 
+@media all and (max-width: 1400px) {
+  .header {
+    align-self: flex-end;
+    height: 500px;
+
+    // Title styling
     &__title {
+      margin-bottom: 300px;
+      height: 145px;
+
       &--circle {
-        bottom: 40px;
+        height: 115px;
+        left: 245px;
+      }
+      &--heading {
+        @include headingSize (100px, 100px);
       }
     }
-  }
+  }  
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
   .header {
+    //Image changes to become the background
     &--image {
       background: url(assets/home-image-1.jpg) no-repeat center center;
       background-size: cover;
@@ -172,12 +185,12 @@
       &:before {
         content: '';
         position: absolute;
-        top: 100px;
+        top: 70px;
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient( top,#fdfdfd00 60%, $primaryColor);
-        opacity: 1; 
+        background-image: linear-gradient( bottom, $primaryColor, $primaryColor);
+        opacity: 0.6; 
       }
     }
 
@@ -185,21 +198,23 @@
       display: none;
     }
 
+
     &__title {
-      margin: auto;
-      padding: 5% 0% 5% 10%;
-      width: 100%;
+      margin: 0 auto;
+      width: 500px;
+      height: 90px;
+      text-align: center;
 
       &--circle {
-        top: 40%;
-        right: 14%;
-        width: 22%;
+        left: 375px;
       }
 
       &--heading {
-        width: 70%;
-        font-size: 15vw;
-        color: $tertiaryColor;
+        width: 100%;
+        font-size: 120px;
+        left: 0;
+        right: 0;
+        top: 55px;
       }
     }
   }
@@ -216,25 +231,28 @@
 
     &--layout-header {
       height: 90vh;
-      flex-direction: row;
-      align-content: flex-end;
+    }
+
+    &--image {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient( bottom,#fdfdfd00, $primaryColor 40%);
+        opacity: 0.6; 
+      }
     }
 
     &__title {
-      position: absolute;
-      padding-left: 10%;
-
+      margin-top: 50vh;
       &--heading {
-        font-size: 17vw;
-      }
-
-      &--circle {
-        top: 40%;
-        right: 12%;
-        max-width: 22%;
+        color: $tertiaryColor;
       }
     }
-  }  
+  } 
 
   // BLOG AND CONTACT SPECIFIC STYLING
   .header {
@@ -287,13 +305,13 @@
       }
       
       &--mobile-layout {
-        margin: 50px;
+        margin: 50px 0;
         display: block;
         width: 100%;
       }
 
       &--heading {
-        margin: 0 30px;
+        margin: 0;
         display: block;
         width: 100%;
       }
@@ -303,7 +321,7 @@
       display: block;
       font-size: 50px;
       position: absolute;
-      right: 50px;
+      right: 30px;
       top: 12px;
 
       &:hover {
@@ -316,10 +334,21 @@
     }
 
   }
- 
-
-
 
 }
 
+@media all and (max-width: 550px) {
+  .header {
+    &__title {
+      margin: auto;
+      &--circle {
+        display: none;
+      }
+
+      &--heading {
+        font-size: 25vw;
+      }
+    }
+  }
+}
 
