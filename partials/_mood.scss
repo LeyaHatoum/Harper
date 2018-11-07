@@ -16,3 +16,30 @@
     width: calc((100% / 3) - 30px);
   }
 }
+
+// MEDIA QUERIES START HERE 
+@media all and (max-width: 1000px) {
+  .mood {
+    padding: 0;
+
+    &--wrapper {
+      width: 100%;
+    }
+
+    &__image {
+      width: calc(100% / 3);
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  .mood {
+    &__image {
+      width: 50%;
+
+      &--hide {
+        display: none;
+      }
+    }
+  }
+}

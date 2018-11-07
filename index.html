@@ -17,19 +17,21 @@
   <header class="header header--image">
     <!-- NAV -->
     <nav class="header__menu">
+      <label class="header__hamburger" for="hamburger"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger">
       <ul class="header__menu--layout">
-        <li class="header__menu--center"><h1 class="header__menu--logo">Harper</h1>
+        <li class="header__menu--center header__menu--heading"><h1 class="header__menu--logo">Harper</h1>
         </li>
-        <li class="header__menu--left">
+        <li class="header__menu--left header__menu--mobile-layout">
         <a class="header__menu--link" href="index.html">Home</a>
         </li>
-        <li class="header__menu--left">
+        <li class="header__menu--left header__menu--mobile-layout">
         <a class="header__menu--link" href="#">About</a>
         </li>
-        <li class="header__menu--right">
+        <li class="header__menu--right header__menu--mobile-layout">
         <a class="header__menu--link" href="blog.html">Blog</a>
         </li>
-        <li class="header__menu--right">
+        <li class="header__menu--right header__menu--mobile-layout">
         <a class="header__menu--link" href="contact.html">Contact</a>
         </li>
       </ul>
@@ -154,7 +156,7 @@
     <div class="mood--wrapper">
         <img class="mood__image mood__image--display" src="assets/home-image-6.jpg" alt="cropped image of the corner top of a building">
         <img class="mood__image mood__image--display" src="assets/home-image-7.jpg" alt="plane flying in the sky between clouds">
-        <img class="mood__image mood__image--display" src="assets/home-image-8.jpg" alt="abstracted image of clouds">
+        <img class="mood__image mood__image--display mood__image--hide" src="assets/home-image-8.jpg" alt="abstracted image of clouds">
     </div>
   </section>
 

@@ -3,6 +3,10 @@
   width: 100%;
   background: $primaryColor;
   position: relative;
+
+  &__hamburger {
+    display: none;
+  }
   
   // NAV BAR STYLING
   &__menu {
@@ -198,34 +202,34 @@
 
 //MOBILE VERSION
 @media all and (max-width: 700px) {
-.header {
-  height: 100vh;
+  .header {
+    height: 100vh;
 
-  &--wrapper {
-    width: 90vw;
-  }
-
-  &--layout-header {
-    height: 90vh;
-    flex-direction: row;
-    align-content: flex-end;
-  }
-
-  &__title {
-    margin: auto;
-    padding-left: 10%;
-
-    &--heading {
-      font-size: 17vw;
+    &--wrapper {
+      width: 90vw;
     }
 
-    &--circle {
+    &--layout-header {
+      height: 90vh;
+      flex-direction: row;
+      align-content: flex-end;
+    }
+
+    &__title {
+      position: absolute;
+      padding-left: 10%;
+
+      &--heading {
+        font-size: 17vw;
+      }
+
+      &--circle {
         top: 40%;
         right: 12%;
         max-width: 22%;
       }
     }
-  }
+  }  
 
   // BLOG AND CONTACT SPECIFIC STYLING
   .header {
@@ -248,7 +252,74 @@
   }
 
   //HAMBURGAAAAAAAAAAAAAA
-  
+  .header {
+    &__menu {
+      position: fixed;
+      z-index: 99;
+      top: 0;
+
+      &--layout {
+        display: block;
+        padding-bottom: 20px;
+        height: 80px;
+        overflow: hidden;
+      }
+
+      &--logo {
+        margin: 5px 30px;
+      }
+    
+      &--left {
+        order: 2;
+      }
+      
+      &--center {
+        order: 1;
+      }
+      
+      &--right {
+        order: 3;
+      }
+      
+      &--mobile-layout {
+        margin: 50px;
+        display: block;
+        width: 100%;
+      }
+
+      &--heading {
+        margin: 0 30px;
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &__hamburger {
+      display: block;
+      font-size: 50px;
+      position: absolute;
+      right: 50px;
+      top: 12px;
+
+      &:hover {
+        color: $tertiaryColor;
+      }
+    }
+
+    input[type=checkbox] {
+      visibility: hidden;
+      position: absolute;
+    }
+
+    input[type=checkbox]:checked ~ .header__menu--layout {
+        height: 450px;
+    }
+
+  }
+ 
+
+
+
 }
 
 
