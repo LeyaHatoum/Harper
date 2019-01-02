@@ -53,7 +53,6 @@
       @include bodyText();
 
       &::placeholder {
-        opacity: 1;
         color: $primaryFontColor;
         text-transform: capitalize;
       }
@@ -61,7 +60,7 @@
   }
 
   &__field1 {
-    width: 48%;
+    width: 49%;
     height: 100px;
     &--space-between {
       margin-right: 10px;
@@ -109,7 +108,6 @@
   &__list {
     list-style: none;
     padding: 0;
-    margin: 0;
     &--bullets {
       &:before {
         content:"•"; 
@@ -186,6 +184,28 @@
     &--margin {
       margin-top: 50px;
     }
+
+    &--center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__sm {
+      color: $secondaryAccentColor;
+      font-size: 28px;
+      display: flex;
+      justify-content: space-around;
+
+      &--space-between {
+        margin-bottom: 5px;
+      }
+
+      &--diff-padding {
+        padding-right: 0;
+      }
+    }
   }
 }
 
@@ -199,6 +219,11 @@
 
     &__left-box {
       display: flex;
+    }
+
+    &--resize-frame {
+      min-width: 100px;
+      height: 100%;
     }
   }
 }
@@ -215,6 +240,7 @@
     &--bgpadding {
       padding: 20px;
     }
+
   }
 }
 
@@ -227,7 +253,6 @@
       flex-direction: column;
       
       &--text {
-        text-align: center;
         margin: 0;
       }
 
@@ -236,48 +261,20 @@
       }
     }
 
-    &__right-box {
-      min-width: 86%;
-      text-align: center;
-    }
+    // &__right-box {
+    //   min-width: 86%;
+    //   // text-align: center;
+    // }
 
     &__list {
       &--bullets {
         margin-top: 10px;
         &:before {
-          content:"•"; 
           font-size: 20px;
           margin: 0 10px 0 10px;
           
         }
       }  
-    }
-
-    &--center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    &__sm {
-    color: $secondaryAccentColor;
-    font-size: 28px;
-    display: flex;
-    justify-content: space-around;
-
-      &--space-between {
-        margin-bottom: 5px;
-      }
-
-      &--diff-padding {
-        padding-right: 0;
-      }
-    }
-
-    &--resize-frame {
-      min-width: 100px;
-      height: 100%;
     }
   }
 

@@ -1,24 +1,17 @@
-//A NOTE: I FORGOT TO CHANGE FONT SIZE OF THE BODY AND USE REM FOR THE REST OF THE FONT SIZES. IT'S NOW TOO LATE TO CHANGE THEM BUT KNOW THAT I AM AWARE OF THIS. SORRY!
-
 // Background colors
 $primaryColor: #b9dde7; //lightbluegrey
-$secondaryColor: #68b0c1;
-//greyblue
-$tertiaryColor: #f6f6f6;
-//whiteshade
+$secondaryColor: #68b0c1; //greyblue
+$tertiaryColor: #f6f6f6; //whiteshade
 
 //Accent colors
-$primaryAccentColor: #f38d8d;
-//accent
-$secondaryAccentColor: #227284;
-//duskblue
+$primaryAccentColor: #f38d8d; //accent
+$secondaryAccentColor: #227284; //duskblue
 
 //Font color
-$primaryFontColor: #171717;
-//black
+$primaryFontColor: #171717; //black
 
 
-//Mixins for Fonts Used
+//Mixins for Fonts Used and Wrapper
 @mixin headingSize ($sizeValue, $lineHeight) {
   font-family: Oswald, sans-serif;
   color: $primaryFontColor;
@@ -31,10 +24,11 @@ $primaryFontColor: #171717;
   font-family: Cabin, sans-serif;
   color: $primaryFontColor;
   line-height: 32px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @mixin wrapper () {
+  max-width: 1500px;
   width: 80vw;
   margin: 0 auto;
 }
@@ -42,12 +36,12 @@ $primaryFontColor: #171717;
 //Button Styling 
 @mixin harperButton {
   background: $primaryAccentColor;
-  @include headingSize (20px, 32px);
+  @include headingSize (1.25rem, 32px);
   border: none;
   padding: 10px 40px;
   transition: background 0.3s, transform 0.3s;
 
-  &:hover {
+  &:hover, &:focus {
     background: $primaryColor;
     transform: scale(1.1);
 
@@ -62,6 +56,7 @@ body {
   background: $tertiaryColor;
   min-height: 100vh;
   position: relative;
+  font-size: 62.5%;
 }
 
 .formlabel {
