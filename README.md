@@ -19,8 +19,8 @@ And, of course: *clean, DRY, and easy-to-read code.*
 - Desktop design is credited to [Melissa Carter](http://www.melissacarterdesign.com/).
 
 ### Links
-**E-mail**: leyahatoum10@gmail.com
-**Site**: [leya.space](http://leya.space/)
-**LinkedIn**: [@leyahatoum](https://www.linkedin.com/in/leyahatoum/)
-**Github**: [@leyahatoum](https://github.com/LeyaHatoum)
-**Twitter**: [@leyahatoum](https://twitter.com/leyahatoum)
+- **E-mail**: leyahatoum10@gmail.com
+- **Site**: [leya.space](http://leya.space/)
+- **LinkedIn**: [@leyahatoum](https://www.linkedin.com/in/leyahatoum/)
+- **Github**: [@leyahatoum](https://github.com/LeyaHatoum)
+- **Twitter**: [@leyahatoum](https://twitter.com/leyahatoum)
